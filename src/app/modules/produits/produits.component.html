@@ -1,3 +1,8 @@
 <div class="container">
-  <p>produits works!</p>
+
+  <h2>Liste des Produits</h2>
+  <br>
+  <ul *ngFor="let produit of Produits" class="list-group">
+    <li class="list-group-item list-group-item-action"><p>Nom : {{produit.marque}}</p><p>  Age : {{produit.prix}} </p>  <p>   Sexe : {{produit.reference}}</p></li>
+  </ul>
 </div>

@@ -12,6 +12,7 @@ import { ContactComponent } from './modules/contact/contact.component';
 import { HomeComponent } from './modules/home/home.component';
 import {HttpClientModule} from "@angular/common/http";
 import {UtilisateursService} from "./modules/utilisateurs/utilisateurs.service";
+import {ProduitsService} from "./modules/produits/produits.service";
 
 @NgModule({
   declarations: [
@@ -31,6 +32,7 @@ import {UtilisateursService} from "./modules/utilisateurs/utilisateurs.service";
   ],
   providers: [
     UtilisateursService,
+    ProduitsService
   ],
   bootstrap: [AppComponent]
 })

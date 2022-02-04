@@ -1,18 +1,20 @@
 import { Injectable } from '@angular/core';
 import {HttpClient} from "@angular/common/http";
 import {Observable} from "rxjs";
-import {iUsers} from "./utilisateurs";
+import {iProduits} from "./produits"
 
 @Injectable({
   providedIn: 'root'
 })
-export class UtilisateursService {
-  UserUrl = 'assets/data/user.json';
+export class ProduitsService {
+  UserUrl = 'assets/data/produits.json';
 
   constructor(private http: HttpClient) {}
 
-  getUser(): Observable<iUsers[]>{
 
-    return this.http.get<iUsers[]>(this.UserUrl);
+
+  getUser(): Observable<iProduits[]>{
+
+    return this.http.get<iProduits[]>(this.UserUrl);
   }
 }

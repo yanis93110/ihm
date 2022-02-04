@@ -1,6 +1,7 @@
 <div class="container">
   <h2>Liste des utilisateurs</h2>
+  <br>
   <ul *ngFor="let user of Users" class="list-group">
-    <li class="list-group-item list-group-item-action">Nom : {{user.name}}  Age : {{user.age}}      Sexe : {{user.sexe}}</li>
+    <li class="list-group-item list-group-item-action"><p>Nom : {{user.name}}</p><p>  Age : {{user.age}} </p>  <p>   Sexe : {{user.sexe}}</p></li>
   </ul>
 </div>
