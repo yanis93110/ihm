@@ -10,6 +10,8 @@ import { UtilisateursComponent } from './modules/utilisateurs/utilisateurs.compo
 import { CommandesComponent } from './modules/commandes/commandes.component';
 import { ContactComponent } from './modules/contact/contact.component';
 import { HomeComponent } from './modules/home/home.component';
+import {HttpClientModule} from "@angular/common/http";
+import {UtilisateursService} from "./modules/utilisateurs/utilisateurs.service";
 
 @NgModule({
   declarations: [
@@ -24,9 +26,12 @@ import { HomeComponent } from './modules/home/home.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    HttpClientModule
   ],
-  providers: [],
+  providers: [
+    UtilisateursService,
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

@@ -1,3 +1,6 @@
 <div class="container">
-  <p>utilisateurs works!</p>
+  <h2>Liste des utilisateurs</h2>
+  <ul *ngFor="let user of Users" class="list-group">
+    <li class="list-group-item list-group-item-action">Nom : {{user.name}}  Age : {{user.age}}      Sexe : {{user.sexe}}</li>
+  </ul>
 </div>
