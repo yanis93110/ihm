@@ -1,5 +1,18 @@
-
 <div class="container">
-  <p>commandes works!</p>
-  <p>https://www.djamware.com/post/5d8d7fc10daa6c77eed3b2f2/angular-8-tutorial-rest-api-and-httpclient-examples</p>
+
+  <h2>Liste des Commandes</h2>
+  <br>
+  <div>
+    <ul *ngFor="let commande of Commandes" class="list-group" style="z-index: 1; position: relative">
+      <li class="list-group-item list-group-item-action" (click)="displayCommandes(commande)"><p>Commande numéro : {{commande.id}}</p>
+        <div *ngIf="commande===selectedCommande">
+          Nom : {{selectedCommande.name}} <br>Prix : {{selectedCommande.prix}}<br>
+          Articles :
+          <p *ngFor="let article of selectedCommande.articles">
+            {{article}}
+          </p>
+        </div>
+      </li>
+    </ul>
+  </div>
 </div>

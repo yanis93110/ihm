@@ -21,10 +21,6 @@ export class ProduitsComponent implements OnInit {
     this.selectedProduct = produit;
   }
 
-  retourzero(){
-    this.selectedProduct = {};
-  }
-
   printTest() {
     alert("test");
   }
