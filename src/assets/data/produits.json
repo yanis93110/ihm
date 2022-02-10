@@ -1,5 +1,26 @@
 [
-  {"id": 1, "marque":  "Apple" , "prix": 900, "reference": "IPhone 13"},
-  {"id": 2, "marque":  "Samsung" , "prix": 850, "reference": "Galaxy S21"},
-  {"id": 3, "marque":  "Huawei" , "prix": 75, "reference": "P40 Pro"}
+  { "id": 1,
+    "marque":  "Apple" ,
+    "prix": 900,
+    "reference": "IPhone 13",
+    "image":  "./assets/data/image/iphone-13.png",
+    "dispo": "Disponible",
+    "description" : "Le dernier smartphone de la marque à la pomme."
+  },
+  { "id": 2,
+    "marque":  "Samsung" ,
+    "prix": 850,
+    "reference": "Galaxy S21",
+    "image":  "./assets/data/image/image-s21.jfif",
+    "dispo": "Disponible",
+    "description" : "Le dernier smartphone de Samsung. Profitez de l'appareil photo le plus puissant de sa catégorie."
+  },
+  { "id": 3,
+    "marque":  "Huawei" ,
+    "prix": 750,
+    "reference": "P40 Pro",
+    "image":  "./assets/data/image/p40-pro-gold.png",
+    "dispo": "Rupture de stocks",
+    "description" : "Arrivé récemment sur le marché, Huawei prend une place de plus en plus importante."
+  }
 ]

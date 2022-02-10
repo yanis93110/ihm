@@ -2,7 +2,14 @@
 
   <h2>Liste des Produits</h2>
   <br>
-  <ul *ngFor="let produit of Produits" class="list-group">
-    <li class="list-group-item list-group-item-action"><p>Marque : {{produit.marque}}</p><p>   Référence : {{produit.reference}}</p><p>  Prix : {{produit.prix}} </p>  </li>
+  <div>
+  <ul *ngFor="let produit of Produits" class="list-group" style="z-index: 1; position: relative">
+    <li class="list-group-item list-group-item-action" (click)="displayProduct(produit)"><img class="fit-picture" alt="image de {{produit.reference}}" src="{{produit.image}}">
+      <p>{{produit.reference}}</p>
+      <div *ngIf="produit===selectedProduct">
+        Marque : {{selectedProduct.marque}} <br>Prix : {{selectedProduct.prix}} <br> {{selectedProduct.description}} <p class="dispo">{{selectedProduct.dispo}}</p>
+      </div>
+    </li>
   </ul>
+  </div>
 </div>

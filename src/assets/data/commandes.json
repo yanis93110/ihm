@@ -1,0 +1,20 @@
+[
+  {
+    "id": 1,
+    "name":  "Yanis" ,
+    "article": ["IPhone 13", "P40 Pro"],
+    "prix" : 1650
+  },
+  {
+    "id": 2,
+    "name":  "Paul" ,
+    "article": "IPhone 13",
+    "prix" : 900
+  },
+  {
+    "id": 3,
+    "name":  "Julie" ,
+    "article": "Galaxy S21",
+    "prix": 850
+  }
+]

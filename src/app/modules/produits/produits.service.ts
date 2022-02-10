@@ -17,4 +17,5 @@ export class ProduitsService {
 
     return this.http.get<iProduits[]>(this.UserUrl);
   }
+
 }

@@ -1,5 +1,17 @@
 [
-  {"id": 1, "name":  "Yanis" , "age": 22, "sexe": "homme"},
-  {"id": 2, "name":  "Paul" , "age": 24, "sexe": "homme"},
-  {"id": 3, "name":  "Julie" , "age": 20, "sexe": "femme"}
+  { "id": 1,
+    "name":  "Yanis" ,
+    "age": 22,
+    "sexe": "Homme"
+  },
+  { "id": 2,
+    "name":  "Paul" ,
+    "age": 24,
+    "sexe": "Homme"
+  },
+  { "id": 3,
+    "name":  "Julie" ,
+    "age": 20,
+    "sexe": "Femme"
+  }
 ]

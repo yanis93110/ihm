@@ -2,6 +2,11 @@
   <h2>Liste des utilisateurs</h2>
   <br>
   <ul *ngFor="let user of Users" class="list-group">
-    <li class="list-group-item list-group-item-action"><p>Nom : {{user.name}}</p><p>  Age : {{user.age}} </p>  <p>   Sexe : {{user.sexe}}</p></li>
+    <li class="list-group-item list-group-item-action" (click)="displayUser(user)"><p>{{user.name}}</p>
+      <div *ngIf="user===selectedUser">
+        Age : {{selectedUser.age}} <br>
+        Sexe: {{selectedUser.sexe}}
+      </div>
+    </li>
   </ul>
 </div>
